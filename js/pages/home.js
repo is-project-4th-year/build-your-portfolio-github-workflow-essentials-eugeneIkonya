@@ -3,7 +3,7 @@ import { OrbitControls } from 'orbitControls';
 import { FontLoader } from 'three/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'three/jsm/geometries/TextGeometry.js';
 
-alert('hello');
+
 
 const canvas = document.getElementById('three-canvas');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
@@ -38,7 +38,9 @@ let keyState = {
     w: false,
     a: false,
     s: false,
-    d: false
+    d: false,
+    plus: false,
+    minus: false
 };
 
 
@@ -64,7 +66,7 @@ loader.load('fonts/helvetiker_regular.typeface.json', function (font) {
         });
         
         const material = new THREE.MeshStandardMaterial({ 
-            color: 0x111111, 
+            color: 0x808080, 
             metalness: 0.3, 
             roughness: 0.4 
         });
@@ -164,13 +166,16 @@ function animate() {
     });
 
     // Handle WASD controls
-    const moveSpeed = 0.25;
-    const rotateSpeed = 0.03;
+    const moveSpeed = 1;
+    const rotateSpeed = 0.05;
+    const zoomSpeed = 3;
 
     if (keyState.w) textGroup.position.y += moveSpeed;
     if (keyState.s) textGroup.position.y -= moveSpeed;
     if (keyState.a) textGroup.rotation.y += rotateSpeed;
     if (keyState.d) textGroup.rotation.y -= rotateSpeed;
+    if (keyState.plus) camera.position.z -= zoomSpeed;
+    if (keyState.minus) camera.position.z += zoomSpeed;
 
     controls.update();
     renderer.render(scene, camera);
@@ -221,6 +226,10 @@ window.addEventListener('keydown', (e) => {
         case 's': keyState.s = true; break;
         case 'a': keyState.a = true; break;
         case 'd': keyState.d = true; break;
+        case '+': 
+        case '=': keyState.plus = true; break;
+        case '-': 
+        case '_': keyState.minus = true; break;
     }
 });
 
@@ -230,5 +239,9 @@ window.addEventListener('keyup', (e) => {
         case 's': keyState.s = false; break;
         case 'a': keyState.a = false; break;
         case 'd': keyState.d = false; break;
+        case '+': 
+        case '=': keyState.plus = false; break;
+        case '-': 
+        case '_': keyState.minus = false; break;
     }
 });
