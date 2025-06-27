@@ -2,67 +2,68 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Eugene Ikonya
+- **Admission Number**: 112448
+- **GitHub Username**: eugeneIkonya
+- **Email**: eugeneikonya@gmail.com
 
 ## 2. Deployed Portfolio Link
 
-- **GitHub Pages URL**:  
-  _(Provide the live link to your deployed portfolio website)_
+- **GitHub Pages URL**: https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-eugeneIkonya/
 
 ## 3. Learnings from the Git Crash Program
 
 **What I Thought I'd Learn vs What I Actually Learned**
 
-Write about **4 things** you expected to learn during the Git crash course (yes, we all came in with some big hopes 😅).
-For each one, tell us:
+1. `Concept: Git Branching`
 
-What you thought it would be like `(Expectation 👀)`
+`Expectation 👀`: Just a way to make copies of code.
 
-What you actually learned `(Reality 😅)`
+`Reality 😅`: A powerful feature for isolating features and experiments without affecting the main code. Learned how to create, switch, and merge branches effectively.
 
-And how it helped with your personal portfolio project 💻
+`Impact 💡`: Helped me develop new features like the 3D text animation and color controls independently without breaking the working version.
 
-**Example format:**
+2. `Concept: Pull Requests`
 
-`Concept: GitHub Project Boards`
+`Expectation 👀`: Just clicking a button to merge code.
 
-`Expectation 👀`: Looked like a complicated tool only teams use.
+`Reality 😅`: A collaborative code review process that helps catch issues early and maintain code quality.
 
-`Reality 😅`: It’s actually a visual to-do list! Dragging my tasks from “To do” to “Done” felt so satisfying.
+`Impact 💡`: Used PRs to properly integrate new features like zoom controls and UI improvements with proper documentation.
 
-`Impact 💡`: Helped me stay organized and track my progress on the portfolio, especially when I had lots of sections to build.
+3. `Concept: Project Boards`
 
+`Expectation 👀`: Another complex project management tool.
+
+`Reality 😅`: An intuitive way to visualize and track tasks, making project progress clear and manageable.
+
+`Impact 💡`: Helped organize portfolio development into clear tasks like "Add 3D Text", "Implement Controls", etc.
+
+4. `Concept: Issue Management`
+
+`Expectation 👀`: Just a bug tracker.
+
+`Reality 😅`: A comprehensive system for planning features, tracking bugs, and documenting decisions.
+
+`Impact 💡`: Used issues to plan and track each portfolio feature, linking them to PRs and milestones.
 
 ## 4. Screenshots of Key GitHub Features
 
-Include screenshots that demonstrate how you used GitHub to manage your project. For each screenshot, write a short caption explaining what it shows.
-
-> Upload the screenshots to your GitHub repository and reference them here using Markdown image syntax:
-> (you could just simply copy and paste the image into the Assignment.md)
-
-```markdown
-![Caption](path/to/your/image.png)
-```
-
 ### A. Milestones and Issues
-
-- Screenshot showing your milestone(s) and the issues linked to it.
+![Milestones and Issues](screenshots/milestones&issues.png)
+This screenshot shows how I organized my portfolio development into milestones and tracked progress through issues.
 
 ### B. Project Board
-
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
+![Project Board](screenshots/project-board.png)
+My project board showing the kanban-style organization of tasks from planning to completion.
 
 ### C. Branching
-
-- Screenshot showing your branch list with meaningful naming.
+![Branching](screenshots/branching.png)
+Shows my branch strategy, including feature branches for different portfolio components.
 
 ### D. Pull Requests
-
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
+![Pull Requests](screenshots/pull-requests.png)
+Example of a pull request showing the implementation of new features with proper review process.
 
 ### E. Merge Conflict Resolution
-
-- Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
+[Add a screenshot of a resolved merge conflict when you encounter one]
